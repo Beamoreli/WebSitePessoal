@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/CSS/contato.css"> -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/imagens/icone.png" type="image/x-icon">
+    <title>Contato Bea</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="/index.html" class="logo"><img src="/imagens/beabea.png" alt="Foto Beatriz"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sobre.html">Sobre</a></li>
+                <li><a href="/contato.html" class="ativo">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+        <main class="contato">
+            <h3>Entre em contato comigo!</h3>
+            <form>
+                <label for="nome"></label>
+                <input type="text" id="nome" class="input-padrao" required placeholder="Seu Nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+    
+                <label for="email"></label>
+                <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+    
+                <label class="wpp" for="Telefone"></label>
+                <input type="text" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+    
+                <label for="mensagem"> </label>
+                <textarea id="mensagem" onkeyup="validaMensagem()" cols="62" rows="1" class="input-padrao" required placeholder="Escreva aqui a sua mensagem"></textarea>
+                <div id="txtMensagem"></div>
+                <input type="submit" value="Enviar Formulário" class="enviar" onclick="enviar()">
+            </form>   
+        </main>
+        <footer>
+            <ul>
+               <li class="li-rodape"><a href=""><img src="/imagens/gh.png" alt=""></a></li>
+               <li class="li-rodape"><a href=""><img src="/imagens/linkedin.png" alt=""></a></li>
+               <li class="li-rodape"><a href=""><img src="/imagens/ig.png" alt=""></a></li>
+               <li class="li-rodape"><a href=""><img src="/imagens/whatsapp.png" alt=""></a></li>
+               <li class="li-rodape"><a href=""><img src="/imagens/gmail.png" alt=""></a></li>
+            </ul>
+            
+            <p class="copyright"> &copy; Copyright Desenvolvido por Beatriz Moreli - 2022</p>
+        </footer>
+    
+    <script src="/js/script..js"></script>
+</body>
+</html>
